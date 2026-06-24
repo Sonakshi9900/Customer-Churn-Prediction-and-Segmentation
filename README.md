@@ -1,10 +1,10 @@
-```markdown
 # 📉 Customer Churn Prediction & Segmentation
 
 ![Python](https://img.shields.io/badge/Python-3.8%2B-blue?logo=python&logoColor=white)
 ![Jupyter](https://img.shields.io/badge/Jupyter-Notebook-orange?logo=jupyter&logoColor=white)
 ![scikit-learn](https://img.shields.io/badge/scikit--learn-ML-yellowgreen?logo=scikit-learn&logoColor=white)
 ![Status](https://img.shields.io/badge/Status-Completed-brightgreen)
+![License](https://img.shields.io/badge/License-MIT-lightgrey)
 [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Sonakshi9900/Customer-Churn-Prediction-and-Segmentation/blob/main/CBSOT_project1.ipynb)
 
 > A machine learning project that predicts customer churn and segments customers using the IBM Telco Customer Churn dataset — enabling telecom businesses to proactively retain at-risk customers.
@@ -66,31 +66,28 @@ Telecom companies face high churn rates, leading to substantial revenue loss. Th
 
 ## 🔄 Project Workflow
 
-
 ```
-
 Raw Data
-│
-▼
+   │
+   ▼
 Data Loading & Exploration (EDA)
-│
-▼
+   │
+   ▼
 Data Preprocessing
 (Handle missing values, encode categoricals, scale features)
-│
-▼
-├──► Churn Prediction (Classification Models)
-│        └─ Logistic Regression / Random Forest / XGBoost
-│
-└──► Customer Segmentation (Clustering)
-└─ K-Means Clustering
-│
-▼
+   │
+   ▼
+   ├──► Churn Prediction (Classification Models)
+   │         └─ Logistic Regression / Random Forest / XGBoost
+   │
+   └──► Customer Segmentation (Clustering)
+             └─ K-Means Clustering
+   │
+   ▼
 Model Evaluation & Insights
-│
-▼
+   │
+   ▼
 Business Recommendations
-
 ```
 
 ---
@@ -112,11 +109,11 @@ Business Recommendations
 - **Logistic Regression** — baseline model
 - **Random Forest Classifier** — ensemble-based predictions
 - **XGBoost / Gradient Boosting** — boosted performance
-- Evaluation via Accuracy, Precision, Recall, F1-Score, and ROC-AUC
+- Evaluation via Accuracy, Precision, Recall, F1-Score, ROC-AUC
 
 ### 4. Customer Segmentation (Clustering)
 - **K-Means Clustering** for unsupervised customer grouping
-- Elbow method to determine the optimal number of clusters
+- Elbow method to determine optimal number of clusters
 - Segment profiling: high-value, at-risk, loyal, and new customers
 
 ---
@@ -127,14 +124,14 @@ Business Recommendations
 |---|---|---|
 | Logistic Regression | ~80% | ~0.84 |
 | Random Forest | ~82% | ~0.87 |
-| XGBoost | ~83% | ~0.88 |
+| XGBoost | ~83%+ | ~0.88+ |
 
 **Key Findings:**
-- Customers on **month-to-month contracts** churn at significantly higher rates.
-- **Fiber optic** internet users show higher churn compared to DSL users.
-- **Senior citizens** and customers without dependents are more likely to churn.
-- High **monthly charges** combined with short tenure is a strong churn indicator.
-- Segmentation revealed distinct groups that can be targeted with tailored offers.
+- Customers on **month-to-month contracts** churn at significantly higher rates
+- **Fiber optic** internet users show higher churn compared to DSL users
+- **Senior citizens** and customers without dependents are more likely to churn
+- High **monthly charges** combined with short tenure is a strong churn indicator
+- Segmentation revealed distinct groups that can be targeted with tailored offers
 
 ---
 
@@ -154,11 +151,13 @@ Business Recommendations
 
 ## 🚀 Getting Started
 
-### ▶️ Run in Google Colab (No Setup Required)
+### ▶️ Run Directly in Google Colab (No Setup Required)
+
+Click the badge below to open and run the notebook instantly in your browser:
 
 [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Sonakshi9900/Customer-Churn-Prediction-and-Segmentation/blob/main/CBSOT_project1.ipynb)
 
-> **Note:** You will need to manually upload the dataset file (`Telco_customer_churn.xlsx`) to your Colab session before running the notebook:
+> **Note:** After opening in Colab, upload `Telco_customer_churn.xlsx` manually using:
 > ```python
 > from google.colab import files
 > uploaded = files.upload()
@@ -173,7 +172,6 @@ Business Recommendations
 ```bash
 Python 3.8+
 pip
-
 ```
 
 ### Installation
@@ -188,7 +186,6 @@ pip install pandas numpy matplotlib seaborn scikit-learn xgboost openpyxl jupyte
 
 # 3. Launch Jupyter Notebook
 jupyter notebook CBSOT_project1.ipynb
-
 ```
 
 ---
@@ -201,19 +198,22 @@ Customer-Churn-Prediction-and-Segmentation/
 ├── CBSOT_project1.ipynb        # Main analysis notebook
 ├── Telco_customer_churn.xlsx   # Dataset
 └── README.md                   # Project documentation
-
 ```
 
 ---
 
 ## 👩‍💻 Author
 
-**Sonakshi Kumari**
+**Sonakshi**
+
+[![GitHub](https://img.shields.io/badge/GitHub-Sonakshi9900-black?logo=github)](https://github.com/Sonakshi9900)
+
+---
+
+## 📄 License
+
+This project is open-source and available under the [MIT License](LICENSE).
 
 ---
 
 > ⭐ If you found this project helpful, please consider giving it a star!
-
-```
-
-```
